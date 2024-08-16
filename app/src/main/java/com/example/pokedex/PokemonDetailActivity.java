@@ -69,8 +69,7 @@ public class PokemonDetailActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (pokemon != null) {
-                    // Implementa la lógica para eliminar el Pokémon
-                    // Aquí podrías llamar a un método para eliminar el Pokémon de la base de datos o la lista
+
                     deletePokemon(pokemon.getNOMBRE());
                 }
             }

@@ -24,6 +24,7 @@ public class AddPokemonActivity extends AppCompatActivity {
     private EditText editTextPokemonAttack;
     private EditText editTextPokemonDefense;
     private EditText editTextPokemonResistance;
+    private Button buttonBack;
     private Button buttonSavePokemon;
 
     @Override
@@ -38,11 +39,19 @@ public class AddPokemonActivity extends AppCompatActivity {
         editTextPokemonDefense = findViewById(R.id.editTextPokemonDefense);
         editTextPokemonResistance = findViewById(R.id.editTextPokemonResistance);
         buttonSavePokemon = findViewById(R.id.buttonSavePokemon);
+        buttonBack = findViewById(R.id.buttonBack);
 
         buttonSavePokemon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 savePokemon();
+            }
+        });
+
+        buttonBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish(); // Cierra la actividad actual y regresa a la anterior
             }
         });
     }
@@ -87,4 +96,5 @@ public class AddPokemonActivity extends AppCompatActivity {
             }
         });
     }
+
 }

@@ -33,4 +33,10 @@ public interface PokemonApiService {
     @POST("crearRegistroBitacora")
     Call<Void> crearRegistroBitacora(@Body Bitacora bitacora);
 
+    @GET("pokemon/report")
+    Call<ResponseBody> getPokemonReport();
+
+
+
 }
+
